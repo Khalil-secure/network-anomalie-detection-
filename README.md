@@ -2,14 +2,14 @@
 anamolies to detect suspecting activities
   we can detect suspecting DoS activities  based on uniformity of IP adresses:(needs knowledge of signature , cant detect new anomalies)
 # Non signature based anomaly detection.
-    principal components analysis PCA
+ principal components analysis PCA
     sketch-based
     signal analysis based
     its hard bcs :  many types of anomalies and methodes deal whith one kind
                     none is best 
                     the field needs evolution
 # network anomalies can be caused by :
-    chengees in link traffic volume 
+chenges in link traffic volume 
     distributiin patterns of IP source or destinations
     flash crowds : large volume of traffic to  a single desstination
     routine table changes
@@ -25,7 +25,7 @@ anamolies to detect suspecting activities
     exponential smoothing
     Box-jekins ARIME
     
-        but the probleme here is scallabality , a large number for each flow defined , the solution to this scalability is to use data stream computation, we use a probalitic summary methodes that uses  random projections , its called the sketch . we use this methodes because its space efficient and provide reconstruction accuracy guarantees , it needs constant update cist
+ but the probleme here is scallabality , a large number for each flow defined , the solution to this scalability is to use data stream computation, we use a probalitic summary methodes that uses  random projections , its called the sketch . we use this methodes because its space efficient and provide reconstruction accuracy guarantees , it needs constant update cist
 first we begin whith PCA-based approaches:
  we are gonna specialise in detecting small volume, correlated anomalies instead of large volme anomalises that other methode specialaise in.
  ths methode is gonna separate the trafic into normal and abnormal ,which achieves three objectives:
@@ -39,3 +39,6 @@ for this methodes we need an understanding in mathematical terms such as covaria
 the code that i am presenting is gonna use the PCA fonction that already exist in the library
 and
 another code that gonna detail mathematically the PCA function which is a manipulation of matrices whith difference terms such as covariance .etc .
+    
+
+    
