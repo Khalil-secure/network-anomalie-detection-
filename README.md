@@ -1,14 +1,14 @@
 # network-anomalie-detection-
 anamolies to detect suspecting activities
   we can detect suspecting DoS activities  based on uniformity of IP adresses:(needs knowledge of signature , cant detect new anomalies)
-## Non signature based anomaly detection.
+# Non signature based anomaly detection.
     principal components analysis PCA
     sketch-based
     signal analysis based
     its hard bcs :  many types of anomalies and methodes deal whith one kind
                     none is best 
                     the field needs evolution
-## network anomalies can be caused by :
+# network anomalies can be caused by :
     chengees in link traffic volume 
     distributiin patterns of IP source or destinations
     flash crowds : large volume of traffic to  a single desstination
@@ -17,10 +17,10 @@ anamolies to detect suspecting activities
     virus 
     worms : scanning by worms for vulanrable hosts , which is a special case if network scan
         network anomalies detection is a challenging probleme , because of the anomalies that  are hardly discernable
-## PCA-based approaches:
+ PCA-based approaches:
     volume based detection : PCA
     Featre-based detection 
-## sketch-based : 
+ sketch-based : 
     sliding window averaging
     exponential smoothing
     Box-jekins ARIME
@@ -36,3 +36,6 @@ first we begin whith PCA-based approaches:
 is a coordinate transformation that maps a set of data points onto new axes called principale axes .the firs principale componet point in the the direction of maximum variance . the second principae direction is the maximum variance remaining in the residue data after removing variance already accounted for by the first principale components.thus it can be used for dimension reduction.
 
 for this methodes we need an understanding in mathematical terms such as covariance and variance ,matrices manipulation and estimations .
+the code that i am presenting is gonna use the PCA fonction that already exist in the library
+and
+another code that gonna detail mathematically the PCA function which is a manipulation of matrices whith difference terms such as covariance .etc .
